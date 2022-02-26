@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function numberMin(a,b,c) {
+        if (a < b) {
+            if (b < c) {
+                return a;
+            } else {
+                return c;
+            }
+        } else if (b<c){
+            return b;
+        } else {
+            return c;
+        }
+    }
+alert('số nhỏ nhất là : '+numberMin(8, 4, 7));
+
+
+</script>
+</body>
+</html>

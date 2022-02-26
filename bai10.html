@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrText = ['a', 'b', 'c'];
+    let kiTu = prompt('Enter data');
+
+    function checkData(arrText, kiTu) {
+        let count = -1;
+        let array = [];
+        for (let i = 0; i < arrText.length; i++) {
+            if (kiTu == arrText[i]) {
+                array.push(kiTu);
+                count = array.length;
+            }
+        }
+        return count;
+    }
+
+    alert(checkData(arrText, kiTu));
+</script>
+</body>
+</html>
